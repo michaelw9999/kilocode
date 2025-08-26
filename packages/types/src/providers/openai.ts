@@ -6,11 +6,19 @@ export type OpenAiNativeModelId = keyof typeof openAiNativeModels
 export const openAiNativeDefaultModelId: OpenAiNativeModelId = "gpt-5-2025-08-07"
 
 export const openAiNativeModels = {
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> 76d925af8 (WIP: mid-merge snapshot from recover-stash)
+	"gpt-5-chat-latest": {
+		maxTokens: 128000,
+		contextWindow: 400000,
+		supportsImages: true,
+		supportsPromptCache: true,
+		supportsReasoningEffort: false,
+		inputPrice: 1.25,
+		outputPrice: 10.0,
+		cacheReadsPrice: 0.13,
+		description: "GPT-5 Chat Latest: Optimized for conversational AI and non-reasoning tasks",
+		supportsVerbosity: true,
+		supportsServiceTier: true,
+	},
 	"gpt-5-2025-08-07": {
 		maxTokens: 128000,
 		contextWindow: 400000,
@@ -24,10 +32,6 @@ export const openAiNativeModels = {
 		description: "GPT-5: The best model for coding and agentic tasks across domains",
 		// supportsVerbosity is a new capability; ensure ModelInfo includes it
 		supportsVerbosity: true,
-<<<<<<< HEAD
-=======
-		supportsServiceTier: true,
->>>>>>> 76d925af8 (WIP: mid-merge snapshot from recover-stash)
 	},
 	"gpt-5-mini-2025-08-07": {
 		maxTokens: 128000,
@@ -41,10 +45,6 @@ export const openAiNativeModels = {
 		cacheReadsPrice: 0.03,
 		description: "GPT-5 Mini: A faster, more cost-efficient version of GPT-5 for well-defined tasks",
 		supportsVerbosity: true,
-<<<<<<< HEAD
-=======
-		supportsServiceTier: true,
->>>>>>> 76d925af8 (WIP: mid-merge snapshot from recover-stash)
 	},
 	"gpt-5-nano-2025-08-07": {
 		maxTokens: 128000,
@@ -58,13 +58,7 @@ export const openAiNativeModels = {
 		cacheReadsPrice: 0.01,
 		description: "GPT-5 Nano: Fastest, most cost-efficient version of GPT-5",
 		supportsVerbosity: true,
-<<<<<<< HEAD
 	},
-=======
-		supportsServiceTier: true,
-	},
->>>>>>> Stashed changes
->>>>>>> 76d925af8 (WIP: mid-merge snapshot from recover-stash)
 	"gpt-4.1": {
 		maxTokens: 32_768,
 		contextWindow: 1_047_576,
